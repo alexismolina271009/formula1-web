@@ -225,13 +225,56 @@
     // Inicializa
     showSlide(0);
 
-    // Nota sobre TikTok embed:
-    // TikTok ofrece código de inserción que genera un iframe o script al incluir el
-    // código provisto por la plataforma para el video específico.
-    // Reemplaza el bloque de video con el código de embed oficial, por ejemplo:
-    // <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@usuario/video/ID" data-video-id="ID" style="width:100%;max-width:720px;">
-    //   <iframe title="TikTok video" src="https://www.tiktok.com/embed/v/ID" ...></iframe>
-    // </blockquote>
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video TikTok de F1</title>
+  <style>
+    /* Estilos opcionales para que el video se vea bien en la página */
+    .video-tiktok {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background: #111;
+      border-radius: 12px;
+      border: 1px solid #2b2b2b;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    /* Ajuste de ancho adaptable */
+    blockquote.tiktok-embed {
+      width: 100%;
+      max-width: 605px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="video-tiktok">
+    <blockquote class="tiktok-embed"
+      cite="https://www.tiktok.com/@f1edits.ae/video/7647884830797204738"
+      data-video-id="7647884830797204738"
+      style="max-width: 605px; min-width: 325px;">
+      <section>
+        <a target="_blank" title="@f1edits.ae" href="https://www.tiktok.com/@f1edits.ae?refer=embed">@f1edits.ae</a>
+        ALL THE BIRDS OF A FEATHER X F1 😜 //
+        <a title="f1" target="_blank" href="https://www.tiktok.com/tag/f1?refer=embed">#f1</a>
+        <a title="formula1" target="_blank" href="https://www.tiktok.com/tag/formula1?refer=embed">#formula1</a>
+        <a title="f1edit" target="_blank" href="https://www.tiktok.com/tag/f1edit?refer=embed">#f1edit</a>
+        <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a>
+        <a target="_blank" title="♬ original sound - 𝐅𝟏 𝐄𝐃𝐈𝐓𝐒" href="https://www.tiktok.com/music/original-sound-7647884840129350422?refer=embed">♬ original sound - 𝐅𝟏 𝐄𝐃𝐈𝐓𝐒</a>
+      </section>
+    </blockquote>
+  </section>
+
+  <script async src="https://www.tiktok.com/embed.js"></script>
+
+</body>
+</html>
+
   </script>
 
 </body>
