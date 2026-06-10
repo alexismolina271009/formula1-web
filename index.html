@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>F1 - Presentación e Información</title>
+  <title>F1 - Presentación, Información y TikTok</title>
   <style>
     :root {
       --bg: #0b0f14;
@@ -104,6 +104,21 @@
       height: 100%;
       border: 0;
     }
+    blockquote.tiktok-embed {
+      width: 100%;
+      max-width: 605px;
+    }
+    .video-tiktok {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background: #111;
+      border-radius: 12px;
+      border: 1px solid #2b2b2b;
+      max-width: 800px;
+      margin: 0 auto;
+    }
     @media (min-width: 900px) {
       main {
         grid-template-columns: 1fr 1fr;
@@ -115,12 +130,12 @@
 <body>
   <header>
     <h1>Fórmula 1</h1>
-    <p>Una cuartilla informativa y un video de TikTok embebido, junto con una breve presentación</p>
+    <p>Cuartilla informativa, video TikTok embebido y presentación</p>
   </header>
 
   <main>
-    <!-- Cuartilla de información -->
-    <section class="card" aria-labelledby="info-title">
+    <!-- Cuartilla de información (se mantiene en la misma página) -->
+    <section class="card" aria-labelledby="info-title" style="min-height: 0;">
       <h2 id="info-title">Información sobre la Fórmula 1</h2>
       <p class="lead">
         La Fórmula 1 es la categoría de automovilismo de más alto nivel en el mundo,
@@ -139,11 +154,11 @@
       <ul class="lead" style="margin-top:0.5rem;">
         <li>Reglas y sesiones: entrenamientos libres, clasificación y carrera.</li>
         <li>Puntos: se otorgan a los 10 primeros en cada carrera según el sistema vigente.</li>
-        <li>Limitaciones técnicas: presupuesto, diseño de monoplaza, y controles de seguridad.</li>
+        <li>Limitaciones técnicas: presupuesto, diseño de monoplaza y controles de seguridad.</li>
       </ul>
     </section>
 
-    <!-- Presentación y video -->
+    <!-- Presentación y TikTok juntos en una misma sección -->
     <section class="card slides" aria-labelledby="presentation-title" id="presentation">
       <h2 id="presentation-title" style="margin-top:0.25rem;">Presentación sobre la F1</h2>
 
@@ -151,8 +166,7 @@
       <div class="slide active" id="slide-1" aria-label="Slide 1">
         <h3>Slide 1: ¿Qué es la Fórmula 1?</h3>
         <p class="lead">
-          La F1 es la máxima categoría del automovilismo. Combina velocidad, tecnología y
-          estrategia para decidir el campeón mundial cada temporada.
+          La F1 es la máxima categoría del automovilismo. Combina velocidad, tecnología y estrategia para decidir el campeón mundial cada temporada.
         </p>
         <ul class="lead">
           <li>Monoplazas de alta tecnología</li>
@@ -164,8 +178,7 @@
       <div class="slide" id="slide-2" aria-label="Slide 2">
         <h3>Slide 2: Estructura de la competición</h3>
         <p class="lead">
-          Cada Gran Premio consta de entrenamientos, clasificación y carrera. Los equipos
-          gestionan estrategia de paradas en boxes, neumáticos y combustible.
+          Cada Gran Premio consta de entrenamientos, clasificación y carrera. Los equipos gestionan estrategia de paradas en boxes, neumáticos y combustible.
         </p>
         <ul class="lead">
           <li>Pilotos: talento y consistencia</li>
@@ -177,16 +190,29 @@
       <div class="slide" id="slide-3" aria-label="Slide 3">
         <h3>Slide 3: Video destacado</h3>
         <p class="lead">A continuación, un video de TikTok sobre la F1.</p>
-        <div class="video-container" aria-label="Video TikTok embebido">
-          <!-- Reemplaza el src con la URL de tu video de TikTok -->
-          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@usuario/video/ID"
-            data-video-id="ID" style="width:100%; height:100%;">
-            <!-- Este bloque es un contenedor placeholder; el iframe real se genera al cargar desde TikTok si usas su código de embed -->
+
+        <!-- Inicio del bloque de TikTok embebido (usa tu código de embed real si lo prefieres) -->
+        <div class="video-tiktok" aria-label="Video TikTok embebido">
+          <blockquote class="tiktok-embed"
+            cite="https://www.tiktok.com/@f1edits.ae/video/7647884830797204738"
+            data-video-id="7647884830797204738"
+            style="max-width: 605px; min-width: 325px;">
+            <section>
+              <a target="_blank" title="@f1edits.ae" href="https://www.tiktok.com/@f1edits.ae?refer=embed">@f1edits.ae</a>
+              ALL THE BIRDS OF A FEATHER X F1 😜 //
+              <a title="f1" target="_blank" href="https://www.tiktok.com/tag/f1?refer=embed">#f1</a>
+              <a title="formula1" target="_blank" href="https://www.tiktok.com/tag/formula1?refer=embed">#formula1</a>
+              <a title="f1edit" target="_blank" href="https://www.tiktok.com/tag/f1edit?refer=embed">#f1edit</a>
+              <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a>
+              <a target="_blank" title="♬ original sound - 𝐅𝟏 𝐄𝐃𝐈𝐓𝐒" href="https://www.tiktok.com/music/original-sound-7647884840129350422?refer=embed">♬ original sound - 𝐅𝟏 𝐄𝐃𝐈𝐓𝐒</a>
+            </section>
           </blockquote>
         </div>
+        <!-- Fin del bloque TikTok -->
+
         <p class="lead" style="font-style: italic; margin-top:.5rem;">
-          Nota: para que el video funcione, reemplaza el bloque anterior con el código de inserción
-          oficial de TikTok para el video deseado.
+          Nota: para que el video funcione, incluye el script de TikTok al final de la página:
+          <code>&lt;script async src="https://www.tiktok.com/embed.js"&gt;&lt;/script&gt;</code>
         </p>
       </div>
 
@@ -198,6 +224,7 @@
     </section>
   </main>
 
+  <script async src="https://www.tiktok.com/embed.js"></script>
   <script>
     // Lógica simple de presentación (slideShow)
     const slides = document.querySelectorAll('.slide');
@@ -224,38 +251,6 @@
 
     // Inicializa
     showSlide(0);
-
-   <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Video TikTok de F1</title>
-  <style>
-    
-
-  <section class="video-tiktok">
-    <blockquote class="tiktok-embed"
-      cite="https://www.tiktok.com/@f1edits.ae/video/7647884830797204738"
-      data-video-id="7647884830797204738"
-      style="max-width: 605px; min-width: 325px;">
-      <section>
-        <a target="_blank" title="@f1edits.ae" href="https://www.tiktok.com/@f1edits.ae?refer=embed">@f1edits.ae</a>
-        ALL THE BIRDS OF A FEATHER X F1 😜 //
-        <a title="f1" target="_blank" href="https://www.tiktok.com/tag/f1?refer=embed">#f1</a>
-        <a title="formula1" target="_blank" href="https://www.tiktok.com/tag/formula1?refer=embed">#formula1</a>
-        <a title="f1edit" target="_blank" href="https://www.tiktok.com/tag/f1edit?refer=embed">#f1edit</a>
-        <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a>
-        <a target="_blank" title="♬ original sound - 𝐅𝟏 𝐄𝐃𝐈𝐓𝐒" href="https://www.tiktok.com/music/original-sound-7647884840129350422?refer=embed">♬ original sound - 𝐅𝟏 𝐄𝐃𝐈𝐓𝐒</a>
-      </section>
-    </blockquote>
-  </section>
-
-  <script async src="https://www.tiktok.com/embed.js"></script>
-
-</body>
-</html>
-
   </script>
 
 </body>
